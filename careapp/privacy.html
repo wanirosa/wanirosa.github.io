@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CareApp 개인정보처리방침</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    line-height: 1.7; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; color: #2b2b2b; background: #fbfaf7; }
+  @media (prefers-color-scheme: dark){ body{ color:#e8e8e8; background:#1a1c1f; } a{ color:#93a0ee; } code{ background:#2a2d32; } }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  h2 { font-size: 18px; margin-top: 32px; border-bottom: 1px solid rgba(128,128,128,.25); padding-bottom: 6px; }
+  .meta { color: #888; font-size: 14px; margin-bottom: 24px; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  code { background: #efece6; padding: 1px 6px; border-radius: 6px; font-size: 90%; }
+  .box { background: rgba(123,140,222,.1); border: 1px solid rgba(123,140,222,.3); border-radius: 12px; padding: 14px 16px; margin: 16px 0; }
+  footer { margin-top: 48px; color: #999; font-size: 13px; }
+</style>
+</head>
+<body>
+  <h1>CareApp 개인정보처리방침</h1>
+  <p class="meta">최종 업데이트: 2026-06-28 · 앱: CareApp (육아 기록 다이어리)</p>
+
+  <div class="box">
+    CareApp은 <strong>이메일·이름·전화번호 등 개인을 식별할 수 있는 정보를 일절 수집하지 않습니다.</strong>
+    회원가입 없이 사용하며, 계정은 사용자의 기기에서 생성된 보안 키로만 보호됩니다.
+  </div>
+
+  <h2>1. 수집·생성하는 정보</h2>
+  <ul>
+    <li><strong>기기 계정 식별자</strong>: 앱 최초 실행 시 기기에서 공개키/비공개키 쌍을 생성합니다. 서버에는 임의로 발급된 계정 ID와 <em>공개키</em>만 저장되며, 비공개키는 기기의 보안 저장소(Android Keystore / iOS Keychain)에만 보관되어 외부로 전송되지 않습니다.</li>
+    <li><strong>육아 기록 데이터</strong>: 사용자가 입력한 수유·수면·배변·체온·투약·성장 측정·예방접종·발달 기록. 기본적으로 <em>사용자 기기에 저장</em>됩니다.</li>
+    <li><strong>표시 이름(선택)</strong>: 가족 공유 시 구성원 구분용으로 사용자가 직접 입력할 수 있는 별명입니다. 입력하지 않아도 됩니다.</li>
+    <li>이메일, 이름, 전화번호, 위치정보, 광고 식별자, 연락처 등은 <strong>수집하지 않습니다.</strong></li>
+  </ul>
+
+  <h2>2. 정보의 이용 목적</h2>
+  <ul>
+    <li>육아 기록의 저장·표시 및 통계·성장 곡선 등 분석 제공</li>
+    <li>가족 구성원 간 기록 공유 및 기기 간 동기화(사용자가 가족 그룹을 사용하는 경우에 한함)</li>
+    <li>기기 키 기반의 안전한 인증</li>
+  </ul>
+
+  <h2>3. 저장 및 공유</h2>
+  <ul>
+    <li>기록 데이터는 사용자의 기기에 저장됩니다.</li>
+    <li>사용자가 <strong>가족 공유 기능</strong>을 사용할 때에만, 해당 가족 그룹 단위로 기록이 서버(<code>api.wanirosa.com</code>)에 동기화되어 같은 그룹의 구성원이 함께 볼 수 있습니다.</li>
+    <li>수집한 정보를 제3자에게 판매하거나 광고 목적으로 제공하지 않습니다.</li>
+  </ul>
+
+  <h2>4. 기기 이전 및 복구</h2>
+  <p>사용자가 복구 암호를 설정하면, 계정 복구에 필요한 비밀값을 복구 암호로 <strong>암호화한 형태로만</strong> 서버에 보관합니다. 서버는 복구 암호 평문이나 비공개키를 알지 못합니다. 새 기기에서 계정 ID와 복구 암호로 계정을 안전하게 이전할 수 있으며, 이전 시 기존 기기의 접근 권한은 폐기됩니다.</p>
+
+  <h2>5. 외부 데이터</h2>
+  <ul>
+    <li>예방접종 안내는 대한민국 질병관리청의 공개 정보를 사용합니다.</li>
+    <li>성장 표준 곡선은 세계보건기구(WHO) 및 2017 소아청소년 성장도표 기준의 공개 통계를 사용합니다.</li>
+    <li>이들 조회 시 개인 식별정보는 전송되지 않습니다.</li>
+  </ul>
+
+  <h2>6. 보안</h2>
+  <p>비공개 키는 기기의 하드웨어 보안 저장소에 보관되고, 서버 통신은 HTTPS로 암호화됩니다. 복구용 비밀값은 사용자만 아는 복구 암호로 암호화되어 보관됩니다.</p>
+
+  <h2>7. 데이터 삭제</h2>
+  <p>앱 내 설정의 “데이터 초기화”로 기기의 기록을 삭제할 수 있습니다. 가족 서버에 동기화된 데이터의 삭제를 원하시는 경우 아래 연락처로 요청해 주세요.</p>
+
+  <h2>8. 아동의 개인정보</h2>
+  <p>본 앱은 보호자(부모 등)가 자녀의 양육 정보를 기록하기 위한 도구이며, 아동으로부터 직접 정보를 수집하지 않습니다. 입력되는 자녀 관련 정보는 보호자가 자신의 기기에서 관리합니다.</p>
+
+  <h2>9. 문의</h2>
+  <p>개인정보 관련 문의: <a href="mailto:hack7956@gmail.com">hack7956@gmail.com</a></p>
+
+  <h2>10. 변경 고지</h2>
+  <p>본 방침이 변경될 경우 본 페이지를 통해 공지합니다.</p>
+
+  <footer>© 2026 wanirosa · CareApp</footer>
+</body>
+</html>
